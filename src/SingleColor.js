@@ -19,7 +19,7 @@ const SingleColor = ({rgb, weight, index, hexColor}) => {
   onClick={()=>{setAlert(true);
   navigator.clipboard.writeText(hexValue);}}>
     <p className="percent-value">{weight}%</p>
-    <p className="color-value">#{hexValue.toUpperCase()}</p>
+    <p className="color-value">{hexValue.toUpperCase()}</p>
     {alert && <p className="alert">Copied to clipboard</p>}
   </article>
 }
